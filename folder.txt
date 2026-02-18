@@ -1,0 +1,29 @@
+CIA 3
+├── backend
+│   ├── data/               (Configuration for seeding)
+│   ├── app.py              (Main Application Entry Point)
+│   ├── config.py           (App Configuration)
+│   ├── database.py         (SQLite Connection Manager)
+│   ├── models.py           (DB Models - Sales, Social, Festival)
+│   ├── seed_generator.py   (Pipeline 1 & 2: Data Seeding & Interference Logic)
+│   ├── analytics_engine.py (Pipeline 3: Derived Metrics & Lag Analysis)
+│   ├── api_routes.py       (Pipeline 4: Analytics Output Layer)
+│   └── run_seed.py         (Database Initialization Script)
+├── frontend
+│   ├── public/             (Static Assets)
+│   ├── src
+│   │   ├── api/            (Axios Data Services)
+│   │   ├── components/     (Section-wise UI Components)
+│   │   │   ├── Section0_GlobalControls/
+│   │   │   ├── Section1_ExecutiveSummary/
+│   │   │   ├── Section2_TimelineAnalysis/
+│   │   │   ├── Section3_SocialInfluence/
+│   │   │   ├── Section4_ComparisonZone/
+│   │   │   ├── Section5_LagAnalysis/
+│   │   │   └── Section6_Counterfactual/
+│   │   ├── context/        (Dashboard Global State Management)
+│   │   ├── utils/          (Data Formatters)
+│   │   ├── App.js          (Root Component)
+│   │   └── index.js        (Mounting Point)
+│   └── package.json        (Dependency Manifest)
+└── database/               (Storage for ecommerce_festive.db)
